@@ -25,6 +25,7 @@ import com.example.khusika.tryslidemenu.adapter.SlidingMenuAdapter;
 import com.example.khusika.tryslidemenu.fragment.fragment1;
 import com.example.khusika.tryslidemenu.fragment.fragment2;
 import com.example.khusika.tryslidemenu.fragment.fragment3;
+import com.example.khusika.tryslidemenu.model.BarTinting;
 import com.example.khusika.tryslidemenu.model.ItemSlideMenu;
 
 import java.util.ArrayList;
@@ -46,6 +47,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        BarTinting tintManager = new BarTinting(this);
+        tintManager.setStatusBarTintEnabled(true);
+        tintManager.setStatusBarTintResource(R.color.colorPrimaryDark);
+        tintManager.setNavigationBarTintEnabled(true);
+        tintManager.setNavigationBarTintResource(R.color.colorPrimaryDark);
 
         mWebView = (WebView) findViewById(R.id.activity_main_webview);
 
