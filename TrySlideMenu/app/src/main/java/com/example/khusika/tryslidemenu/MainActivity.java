@@ -22,7 +22,7 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
 import com.example.khusika.tryslidemenu.adapter.SlidingMenuAdapter;
-import com.example.khusika.tryslidemenu.fragment.fragment1;
+import com.example.khusika.tryslidemenu.fragment.ViewPagerFragment;
 import com.example.khusika.tryslidemenu.fragment.fragment2;
 import com.example.khusika.tryslidemenu.fragment.fragment3;
 import com.example.khusika.tryslidemenu.model.BarTinting;
@@ -221,7 +221,7 @@ public class MainActivity extends AppCompatActivity {
         Fragment fragment = null;
         switch (pos) {
             case 0:
-                fragment = new fragment1();
+                fragment = new ViewPagerFragment();
                 break;
             case 1:
                 fragment = new fragment2();
@@ -230,7 +230,7 @@ public class MainActivity extends AppCompatActivity {
                 fragment = new fragment3();
                 break;
             default:
-                fragment = new fragment1();
+                fragment = new ViewPagerFragment();
                 break;
         }
 
