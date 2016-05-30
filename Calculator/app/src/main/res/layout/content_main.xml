@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="khusika.calculator.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/tombolNol"
+        android:layout_marginBottom="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:id="@+id/tombolTitik"
+        android:layout_alignTop="@+id/tombolNol"
+        android:layout_toRightOf="@+id/tombolNol"
+        android:layout_toEndOf="@+id/tombolNol" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:id="@+id/tombolSamaDengan"
+        android:layout_alignTop="@+id/tombolTitik"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+/-"
+        android:id="@+id/tombolNP"
+        android:layout_alignTop="@+id/tombolSamaDengan"
+        android:layout_toRightOf="@+id/tombolTitik"
+        android:layout_toEndOf="@+id/tombolTitik" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/tombolSatu"
+        android:layout_above="@+id/tombolNol"
+        android:layout_toLeftOf="@+id/tombolTitik"
+        android:layout_toStartOf="@+id/tombolTitik" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/tombolDua"
+        android:layout_above="@+id/tombolTitik"
+        android:layout_alignLeft="@+id/tombolTitik"
+        android:layout_alignStart="@+id/tombolTitik" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:id="@+id/tombolTiga"
+        android:layout_above="@+id/tombolSamaDengan"
+        android:layout_toLeftOf="@+id/tombolSamaDengan"
+        android:layout_toStartOf="@+id/tombolSamaDengan" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="( )"
+        android:id="@+id/tombolKurung"
+        android:layout_above="@+id/tombolSamaDengan"
+        android:layout_toRightOf="@+id/tombolNP"
+        android:layout_toEndOf="@+id/tombolNP" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:id="@+id/tombolEmpat"
+        android:layout_above="@+id/tombolSatu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:id="@+id/tombolEnam"
+        android:layout_above="@+id/tombolSatu"
+        android:layout_alignRight="@+id/tombolTiga"
+        android:layout_alignEnd="@+id/tombolTiga" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:id="@+id/tombolLima"
+        android:layout_alignTop="@+id/tombolEnam"
+        android:layout_toLeftOf="@+id/tombolEnam"
+        android:layout_toStartOf="@+id/tombolEnam" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/tombolTambah"
+        android:layout_alignTop="@+id/tombolEnam"
+        android:layout_toRightOf="@+id/tombolTiga"
+        android:layout_toEndOf="@+id/tombolTiga" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/tombolKurang"
+        android:layout_above="@+id/tombolEnam"
+        android:layout_toRightOf="@+id/tombolEnam"
+        android:layout_toEndOf="@+id/tombolEnam" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:id="@+id/tombolBagi"
+        android:layout_above="@+id/tombolKurang"
+        android:layout_toRightOf="@+id/tombolEnam"
+        android:layout_toEndOf="@+id/tombolEnam" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:id="@+id/tombolTujuh"
+        android:layout_above="@+id/tombolEmpat"
+        android:layout_toLeftOf="@+id/tombolLima"
+        android:layout_toStartOf="@+id/tombolLima" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:id="@+id/tombolDelapan"
+        android:layout_below="@+id/tombolBagi"
+        android:layout_alignLeft="@+id/tombolLima"
+        android:layout_alignStart="@+id/tombolLima" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:id="@+id/tombolSembilan"
+        android:layout_below="@+id/tombolBagi"
+        android:layout_toRightOf="@+id/tombolDelapan"
+        android:layout_toEndOf="@+id/tombolDelapan" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="√"
+        android:id="@+id/tombolAkar"
+        android:layout_above="@+id/tombolTujuh"
+        android:layout_toLeftOf="@+id/tombolDelapan"
+        android:layout_toStartOf="@+id/tombolDelapan" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="^"
+        android:id="@+id/tombolPangkat"
+        android:layout_alignTop="@+id/tombolAkar"
+        android:layout_toLeftOf="@+id/tombolSembilan"
+        android:layout_toStartOf="@+id/tombolSembilan" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:id="@+id/tombolKali"
+        android:layout_above="@+id/tombolKurang"
+        android:layout_toLeftOf="@+id/tombolKurang"
+        android:layout_toStartOf="@+id/tombolKurang" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:id="@+id/tombolBersih"
+        android:layout_above="@+id/tombolAkar"
+        android:layout_toLeftOf="@+id/tombolPangkat"
+        android:layout_toStartOf="@+id/tombolPangkat" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/x"
+        android:id="@+id/tombolSeper"
+        android:layout_above="@+id/tombolPangkat"
+        android:layout_alignLeft="@+id/tombolPangkat"
+        android:layout_alignStart="@+id/tombolPangkat" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:id="@+id/tombolPersen"
+        android:layout_above="@+id/tombolBagi"
+        android:layout_toLeftOf="@+id/tombolBagi"
+        android:layout_toStartOf="@+id/tombolBagi" />
+
+    <Button
+        android:onClick="ButtonClickHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEL"
+        android:id="@+id/tombolHapus"
+        android:layout_alignTop="@+id/tombolPersen"
+        android:layout_toRightOf="@+id/tombolKali"
+        android:layout_toEndOf="@+id/tombolKali" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:ems="10"
+        android:cursorVisible="false"
+        android:gravity="right"
+        android:textSize="40dp"
+        android:text="0"
+        android:id="@+id/kotakText"
+        android:layout_alignRight="@+id/tombolHapus"
+        android:layout_alignEnd="@+id/tombolHapus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/tombolBersih" />
+
+</RelativeLayout>
